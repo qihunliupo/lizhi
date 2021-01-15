@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>for循环</title>
+<script>
+	var str = ""; //输出值存储
+	var prefix = "" //前缀名
+	var num = prompt("循环次数"); //循环次数
+
+	//去除最后边的 + 号
+	for(var i = 0; i <= num; i ++){
+		if(i == num){
+			str += prefix + i;
+		} else {
+			str += prefix + i + "+";
+		}
+	}
+
+	//页面输出内容
+	document.write(str);
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
+------------------------------------
+copy /b 青鸟1.mp3+青鸟2.mp3 合成品.mp3
+----------------------------------
+在同一个文件夹
+---------------------
