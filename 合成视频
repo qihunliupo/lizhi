@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>for循环</title>
+<title>影音拼接</title>
 </head>
 <body>
 	<div id="output"></div>
