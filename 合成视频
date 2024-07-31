@@ -1,31 +1,27 @@
 <html>
 <head>
 <title>for循环</title>
-<script>
-	var str = ""; //输出值存储
-	var prefix = "" //前缀名
-	var num = prompt("循环次数"); //循环次数
-
-	//去除最后边的 + 号
-	for(var i = 0; i <= num; i ++){
-		if(i == num){
-			str += prefix + i;
-		} else {
-			str += prefix + i + "+";
-		}
-	}
-
-	//页面输出内容
-	document.write(str);
-</script>
 </head>
-
 <body>
+	<div id="output"></div>
+	<script>
+		var string = "";
+		var prefix = "";
+		var num = prompt("循环次数");
 
+		// 检查输入是否为有效的正整数
+		if (num !== null && !isNaN(num) && num >= 0) {
+			for (var i = 0; i <= num; i++) {
+				if (i == num) {
+					string += prefix + i;
+				} else {
+					string += prefix + i + "+";
+				}
+			}
+			document.getElementById("output").innerHTML ="copy /b " + string + " 00.mp4";
+		} else {
+			document.getElementById("output").innerHTML = "请输入一个有效的循环次数。";
+		}
+	</script>
 </body>
 </html>
-------------------------------------
-copy /b 青鸟1.mp3+青鸟2.mp3 合成品.mp3
-----------------------------------
-在同一个文件夹
----------------------
