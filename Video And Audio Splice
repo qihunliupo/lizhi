@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>For循环</title>
+<script>
+	var string = ""; //输出值存储
+	var prefix = "" //前缀名设置
+	var suffix = ""; //后缀名设置
+	var num = prompt("循环次数"); //循环次数
+
+	// 检查输入是否为有效的正整数
+	if (num !== null && !isNaN(num) && num >= 0) {
+		for(var i = 0; i <= num; i ++){
+			if(i == num){
+				string += prefix + i + suffix;
+			} else {
+				string += prefix + i + suffix + "+";
+			}
+		}		
+		//页面输出内容
+		document.write("copy /b " + string + " 00.mp4");
+	} else {
+		document.write("请输入一个正整数。");
+	}
+</script>
+</head>
+
+<body>
+</body>
+</html>
